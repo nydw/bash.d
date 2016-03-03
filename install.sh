@@ -1,5 +1,5 @@
 #!/bin/bash
 
 mv ../bash.d $HOME/.bash.d
-ln -sf /home/lgx/.bash.d/.bashrc  .
+ln -sf $HOME/.bash.d/.bashrc $HOME/.bashrc
 

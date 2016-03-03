@@ -1,0 +1,3 @@
+source $BASH_HOME/env/color
+source $BASH_HOME/env/inactive
+source $BASH_HOME/env/active

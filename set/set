@@ -1,0 +1,8 @@
+umask 077
+OS=$(uname)
+ulimit -S -c 0      # Don't want any coredumps
+
+set -o notify       # notify when jobs running background terminated
+set -o noclobber    # prevents catting over file
+set -o ignoreeof    # can not C-d out of shell
+

@@ -1,0 +1,5 @@
+set -o emacs
+
+
+bind '"\C-f": forward-word'
+bind '"\C-d": backward-word'

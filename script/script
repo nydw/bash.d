@@ -1,5 +1,6 @@
 source $BASH_HOME/script/common
 source $BASH_HOME/script/file
+source $BASH_HOME/script/search
 source $BASH_HOME/script/process
 source $BASH_HOME/script/sysinfo
 

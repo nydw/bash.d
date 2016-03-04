@@ -48,7 +48,9 @@ function s {
     if [ -z "$exit_message" ]; then
         _purge_line "$SDIRS" "export DIR_$1="
         CURDIR=$(echo $PWD| sed "s#^$HOME#\$HOME#g")
+        set +o noclobber
         echo "export DIR_$1=\"$CURDIR\"" >> $SDIRS
+        set -o noclobber
     fi
 }
 
@@ -147,7 +149,9 @@ function _purge_line {
         trap "/bin/rm -f -- '$t'" EXIT
 
         # purge line
+        et +o noclobber
         sed "/$2/d" "$1" > "$t"
+        et -o noclobber
         /bin/mv "$t" "$1"
 
         # cleanup temp file

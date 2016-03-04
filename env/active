@@ -1,3 +1,3 @@
-export PATH=$HOME/.local/bin:$HOME/.local/sbin:$PATH:$HOME/bin:$HOME/bin/bin:$HOME/bin/mussh:/usr/bin:/bin:.
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+export PATH=$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
 

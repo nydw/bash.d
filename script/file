@@ -164,4 +164,12 @@ mdcd ()
   fi
 }
 
-
+mvbak ()
+{
+  if [ $# -lt 1 ]; then
+    echo " mv file file.bak"
+    echo " USAGE: mvbak file"
+  else
+    mv $1 $1.$(date "+%Y%m%d%H%M%S").bak
+  fi
+}

@@ -4,4 +4,5 @@ source $BASH_HOME/script/search
 source $BASH_HOME/script/process
 source $BASH_HOME/script/sysinfo
 source $BASH_HOME/script/bashmarks
+source $BASH_HOME/script/highlight
 

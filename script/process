@@ -37,4 +37,11 @@ function corename   # Get name of app that created a corefile.
     done
 }
 
-
+# add restart emacs function
+function stop-emacs(){
+    emacsclient -e "(kill-emacs)"
+}
+function restart-emacs(){
+    emacsclient -e "(kill-emacs)"
+    emacs --daemon
+}

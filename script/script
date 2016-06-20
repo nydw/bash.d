@@ -1,8 +1,8 @@
 source $BASH_HOME/script/common
 source $BASH_HOME/script/file
+source $BASH_HOME/script/emacs
 source $BASH_HOME/script/search
 source $BASH_HOME/script/process
 source $BASH_HOME/script/sysinfo
-source $BASH_HOME/script/cdmarks
-source $BASH_HOME/script/highlight
+source $BASH_HOME/script/bashmarks
 

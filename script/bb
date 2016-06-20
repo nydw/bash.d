@@ -1,0 +1,13 @@
+function bb
+{
+    filename=$1
+    extension="${filename##*.}"
+    case "$extension" in
+        "go") go run $filename ;;
+        "py") python $filename ;;
+        "cc") g++ $filename;;
+        "cpp") g++ $filename ;;
+        "php") php $filename ;;
+        *) file $filename; return;;
+    esac
+}

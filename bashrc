@@ -9,4 +9,6 @@ source $BASH_HOME/alias/alias
 source $BASH_HOME/bindkey/bindkey
 source $BASH_HOME/hosts/hosts
 
-
+if [ -f $HOME/.work_bashrc ]; then
+  . $HOME/.work_bashrc
+fi

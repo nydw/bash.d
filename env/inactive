@@ -12,6 +12,9 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="&:bg:fg:ll:h"
 export HISTTIMEFORMAT="%Y%m%d-%H:%M:%S > "
 
+#mac ls colors
+export LSCOLORS=Exfxhxhxgxhxhxgxgxbxbx
+export CLICOLOR=1
 
 export PAGER='less -Em'
 export LESSCHARSET='latin1'
